@@ -1,0 +1,124 @@
+.hero{
+    height:100vh;
+    width:100%;
+    background-color: #ff5200;
+    display:flex;
+    flex-direction: column;
+    padding-top:70px;
+    align-items: center;
+    
+
+}
+
+
+
+.hero >p{
+    color: white;
+    font-weight :bolder;
+    font-size:45px;
+    text-align: center;
+
+}
+
+.hero .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+
+.hero .search .search-box input , 
+.hero .search .location-box input {
+    padding:17px;
+    margin :10px;
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 0.359);
+    font-weight:bolder;
+
+}
+
+.hero .search .location-box {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+
+
+.hero .search .location-box img{
+    position:relative;
+    width:25px;
+    height:auto;
+    top:50%;
+    left:15%;
+    transform: translateY(-2px);
+
+
+}
+
+.hero .search .location-box input{
+   width:290px;
+   padding-left:50px;
+
+}
+
+.hero .search .search-box input{
+   width:450px;
+}
+
+input:focus{
+    outline:none;
+}
+
+.hero img{
+    position:absolute;
+    top:20%;
+    max-width: 250px;
+    
+}
+
+.hero .left{
+    left:0;
+    overflow: hidden;
+}
+
+.hero .right{
+    right:0;
+    overflow: hidden;
+}
+
+
+
+.search2 .search-box img{
+    width:25px;
+    height:auto;
+    position:relative;
+    right:12%;
+    transform: translateY(6px);
+    margin-top:16px;
+
+}
+
+
+.hero .cards  {
+    position: absolute;
+    transform:translateY(250px);
+    left:10%;
+    overflow-x: scroll;
+    scrollbar-width:auto;
+    white-space: nowrap;
+    display: flex;
+
+}
+
+.hero .cards::-webkit-scrollbar{
+    height:16px;
+}
+
+
+.hero .cards img {
+   position: static;
+    max-width: 29%;
+    height: auto;
+}
